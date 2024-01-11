@@ -1,0 +1,751 @@
+@media (min-width: 1400px) {
+  .container {
+    max-width: 100%;
+    padding: 0 3%;
+  }
+  /* ------------------- Hero Classes ----------------- */
+  .hero-desktop-half-width {
+    max-width: 60%;
+  }
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1170px;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1299px) {
+  .container {
+    max-width: 960px;
+  }
+  html {
+    font-size: 48%;
+  }
+}
+@media (min-width: 991px) {
+  /* -------------------- General Styles ------------------ */
+  .col-lg-4,
+  .col-lg-6,
+  .col-lg-12,
+  .col-lg-3 {
+    padding: 0 2.5rem;
+  }
+  /* ----------- Mobile Menu ----------- */
+  .hamburger {
+    display: none;
+  }
+  .submenu_wrap:hover .submenu {
+    top: calc(100% - 1rem);
+    height: 18rem;
+    opacity: 1;
+    z-index: 999;
+  }
+
+  /* -------------- Case Study Section --------------- */
+  .case_box_middle {
+    margin-top: 7rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .col-lg-2.col-sm-4:nth-child(4) .footer_link_box {
+    transform: translateX(10rem);
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 44%;
+  }
+  br {
+    display: none;
+  }
+
+  /* ------------------- Common Classes ----------------- */
+  .title_md {
+    font-size: 4.2rem;
+    line-height: 6.6rem;
+  }
+  .text_lg {
+    font-size: 1.5rem;
+  }
+  /* -------------------- Mobile Menu --------------- */
+  .primary_menu {
+    position: absolute;
+    left: 0;
+    top: 10rem;
+    background: #000000;
+    display: grid !important;
+    gap: 0;
+    justify-content: initial !important;
+    z-index: 999;
+    height: 0;
+    border-bottom: 0.6rem solid #ffffff59;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0.1rem solid #ffffff59;
+    overflow-y: scroll;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .header_right.active .primary_menu {
+    height: 50rem;
+    opacity: 1;
+  }
+  .menu_accordian {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .menulink {
+    width: 100%;
+  }
+  .menulink.submenu_wrap {
+    justify-content: flex-start;
+  }
+  .primary_menu .menulink,
+  .primary_menu .menulink2 {
+    padding-left: 4rem;
+    border-bottom: 0.2rem solid #efefef38;
+    height: 8rem;
+    color: #fff;
+    width: 100%;
+  }
+  .primary_menu .menulink:hover {
+    background: #000000;
+    color: #ffffffb5;
+  }
+  .primary_menu .menulink2:hover {
+    background: #000000c2;
+  }
+  .primary_menu .menulink2 {
+    padding-left: 5rem;
+  }
+  .menulink.active {
+    opacity: 0.6;
+  }
+  .menulink:last-child {
+    border-bottom: 0;
+  }
+  .primary_menu::-webkit-scrollbar-thumb {
+    background-color: #ffffff59;
+  }
+  .primary_menu::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+  .primary_menu::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  .primary_menu ::-webkit-scrollbar-thumb {
+    height: 5rem;
+  }
+
+  .hamburger .h_x {
+    display: none;
+  }
+
+  .hamburger.active .h_bar {
+    display: none;
+  }
+
+  .hamburger.active .h_x {
+    display: block;
+  }
+
+  .hamburger img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(82deg) brightness(105%) contrast(105%);
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  .hamburger img:hover {
+    opacity: 0.7;
+  }
+  /* ------------- Titles and Texts ---------------- */
+  .flex_item_rows {
+    gap: 3rem 0;
+  }
+
+  /* ----------------- Common Classes ------------- */
+  .SectionHead h2 br {
+    display: block;
+  }
+
+  /* -------------- Counter Section -------------- */
+  .counter_row .col-lg-3:nth-child(2),
+  .counter_row .col-lg-3:last-child {
+    border-right: none !important;
+  }
+  .count_text br {
+    display: block;
+  }
+  /* --------------- Agency Section ------------------ */
+  .agency_section {
+    background: url(../img/agency_bg.png) no-repeat scroll top center / cover;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  /* ---------------- Service Section --------------- */
+  .service_section .flex_item_rows .col-lg-4 {
+    padding: 0 1.5rem;
+  }
+  .service_section .flex_item_rows {
+    gap: 3rem 0;
+  }
+  /* ----------------- Focus Section ---------------- */
+  .focus_section {
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+  }
+  .focus_section .SectionHead {
+    padding-bottom: 4.5rem;
+  }
+
+  /* ----------------- Testimonial Section ---------------- */
+  .testimonial_slider {
+    padding-top: 12rem;
+  }
+  .testimonial_slider .owl-dots {
+    gap: 1.7rem;
+    margin-top: 10rem;
+  }
+  .testimo_qoute {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  /* ----------------- Testimonial Section ---------------- */
+  .casestudy_box {
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    padding-left: 5rem;
+    padding-right: 2.5rem;
+    border-radius: 1.5rem;
+  }
+  .case_study_section .pt_70 {
+    padding-top: 0;
+  }
+  .casestudy_img {
+    margin-bottom: 3rem;
+  }
+  /* ----------------- featured Section ----------------- */
+  .feature_section {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  /* ------------------- Footer Section--------------- */
+  .footer_section .col-lg-2:not(.footer_section .col-lg-2.col-sm-12) {
+    padding-left: 0;
+  }
+  .footer_title:before {
+    display: none;
+  }
+  .footer_links li a {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .footer_section .row {
+    gap: 6rem 0;
+  }
+
+  .footer_links {
+    gap: 2rem;
+  }
+
+  .footer_right {
+    padding-left: 0;
+  }
+  .f_right_bottom .footer_text_md {
+    font-size: 2.4rem;
+  }
+  .f_footer_text {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .footer_text_md {
+    font-size: 3.5rem;
+  }
+  .footer_title {
+    margin-bottom: 5rem;
+  }
+  .form_groups {
+    display: flex;
+    gap: 4rem;
+  }
+  .form_groups .form-group {
+    width: 100%;
+  }
+  .social_logo a:nth-child(1) img {
+    width: 5rem;
+    height: unset;
+  }
+  .social_logo a:nth-child(2) img {
+    width: 6rem;
+    height: unset;
+  }
+  .social_logo a:nth-child(3) img {
+    width: 4rem;
+    height: unset;
+  }
+
+  /* ---------------- Service_section ----------------- */
+  .service_section2 .flex_item_rows {
+    gap: 4rem 0;
+  }
+  .service_section2 .title_lg,
+  .Proprietary_section .title_lg {
+    font-size: 6rem;
+  }
+  /* ---------------- .Proprietary_section ----------------- */
+  .Proprietary_section .col-lg-5.pl_60 {
+    padding: 0;
+  }
+  .Proprietary_section .row {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+  .Proprietary_slider .owl-dots {
+    justify-content: center;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 66%;
+  }
+  section {
+    padding: 6rem 0 !important;
+  }
+  .flex_item_rows {
+    gap: 2rem 0;
+  }
+  ::-webkit-scrollbar {
+    width: 0.8rem; /* width of the scrollbar */
+  }
+  ::-webkit-scrollbar-thumb {
+    height: auto; /* height of the thumb (the draggable part) */
+  }
+  .back-to-top {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  /* ---------- Common Classes --------- */
+  .text_xl {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .text_lg {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .title_xl {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+  .title_lg {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .title_md {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+  }
+  .title_xsm {
+    font-size: 2.88rem;
+    line-height: 1.5rem;
+  }
+  .flex_item_rows .col-lg-4 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .SectionHead .pb_50 {
+    padding-bottom: 2rem;
+  }
+
+  .SectionHead .pb_45 {
+    padding-bottom: 2rem;
+  }
+
+  .SectionHead .pb_65 {
+    padding-bottom: 3.5rem;
+  }
+
+  .SectionHead .pb_25 {
+    padding-bottom: 1.5rem;
+  }
+
+  .SectionHead.pb_100 {
+    padding-bottom: 5rem;
+  }
+  .text_xl.pb_60 {
+    padding-bottom: 3rem;
+  }
+  .SectionHead {
+    text-align: center;
+  }
+  .SectionHead .button {
+    margin: 0 auto;
+    border-width: 0.3rem;
+  }
+  .box_title {
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+  }
+  .box_title.pb_25 {
+    padding-bottom: 1.5rem;
+  }
+  .SectionHead h2 br {
+    display: block;
+  }
+  .title_md.pb_40 {
+    padding-bottom: 3rem;
+  }
+  .SectionHead.pb_75 {
+    padding-bottom: 4.5rem;
+  }
+  .focus_section .SectionHead br {
+    display: none;
+  }
+  .SectionHead .title_xl.pb_35 {
+    padding-bottom: 2.5rem;
+  }
+  /* ---------------- Mobile Menu --------------- */
+  .header_right.active .primary_menu {
+    height: 40rem;
+  }
+  .menulink {
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+  .primary_menu {
+    top: 7rem;
+    border-bottom: 0.3rem solid #ffffff59;
+  }
+  .primary_menu .menulink {
+    padding-left: 3rem;
+    height: 6rem;
+  }
+  .primary_menu .menulink2 {
+    padding-left: 4rem;
+    height: 6rem;
+  }
+  .menulink2 {
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+  /* --------------- Header Area -------------- */
+  .site_header {
+    height: 7rem;
+    top: 2rem;
+  }
+  .logo img {
+    width: 14rem;
+  }
+
+  /* ----------------- Hero Section -------------- */
+  .hero_section {
+    padding-top: 14rem !important;
+  }
+  .button {
+    font-size: 1.7rem;
+    height: 4.492rem;
+    padding: 0 4.5rem;
+    border-radius: 4.5rem;
+    line-height: 4.2rem;
+  }
+  .sponsor_slider {
+    margin-top: 7rem;
+  }
+  .sponsor_slider:before,
+  .sponsor_slider:after {
+    width: 4rem;
+  }
+  .hero_section .text_xl.pb_55 {
+    padding-bottom: 4rem;
+  }
+  .hero_section .SectionHead .text_xl {
+    padding-bottom: 3rem;
+  }
+  /* ----------------- Sponsor Section -------------- */
+  .sponsor_slider .owl-stage {
+    gap: 5rem;
+  }
+  .sponsor_slider img {
+    width: 15rem;
+  }
+  .sponsor_slider:before,
+  .sponsor_slider:after {
+    display: none;
+  }
+  /* ---------------- Offer Section ------------- */
+  .offer_area {
+    padding-top: 3rem !important;
+  }
+  .offer_contents {
+    padding: 2rem 2rem;
+    padding-bottom: 4rem;
+  }
+
+  /* --------------- Counter Section ------------ */
+  .counter {
+    line-height: 3.5rem;
+    font-size: 4rem;
+  }
+  .count_text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .counter_row .col-lg-3 {
+    border-right: none !important;
+  }
+  .counter_row {
+    margin-top: 4rem;
+  }
+  .count_text br {
+    display: block;
+  }
+  .symbol {
+    font-size: 2.8rem;
+  }
+  /* --------------- Service Section ------------- */
+  .service_icon img {
+    width: 4rem;
+  }
+  .service_box {
+    padding-left: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .service_box .box_title.pb_25 {
+    padding-bottom: 1rem;
+  }
+  .service_section .flex_item_rows .col-lg-4 {
+    padding: 0;
+  }
+  .service_section .flex_item_rows {
+    gap: 2rem 0;
+  }
+  /* ------------ Tesmonial Section ----------- */
+  .testimo_qoute {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding-bottom: 4rem;
+  }
+  .testi_bio a {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  .testi_bio h3 {
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+  .testimonial_slider {
+    padding-top: 7rem;
+  }
+  .testimonial_slider .owl-nav {
+    display: none;
+  }
+  .testimonial_slider .owl-dots {
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  .testimonial_slider .owl-dot {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .testimo_qoute {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .testimo_slide > img {
+    width: 14rem;
+  }
+  .testimonial_section .title_xsm {
+    font-size: 3.5rem;
+    line-height: 1rem;
+  }
+  /* ------------- Focus Section --------------- */
+  .focus_section .SectionHead .title_md {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  .focus_section .SectionHead {
+    padding-bottom: 0;
+  }
+  .counterbox {
+    padding-top: 2rem;
+  }
+  /* -------------- Case Study Section ------------ */
+  .casestudy_box {
+    border-radius: 0.5rem;
+    padding-top: 9rem;
+    padding-left: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .casestudy_img img {
+    width: 14rem;
+  }
+  /* ---------------- Feature Section -------------- */
+  .feature_section .title_md {
+    font-size: 3.36rem;
+    line-height: 4.4rem;
+  }
+  .feature_section .text_xl {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  /* ------------- Footer Section --------------- */
+  .social_logo img {
+    width: auto;
+    height: auto;
+  }
+  .footer_title {
+    margin-bottom: 2.6rem;
+  }
+  .footer_links {
+    gap: 1.5rem;
+  }
+  .footer_section .row {
+    gap: 5rem 0;
+  }
+  .footer_title:before {
+    display: none;
+  }
+  .footer_text_md {
+    font-size: 1.8rem;
+  }
+  .footer_links li a,
+  .Copyright_text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .footer_input {
+    padding: 0;
+    padding-left: 2.5rem;
+    height: 4.5rem;
+    border: 0.2rem solid #0079ff;
+  }
+  .footer_section .col-lg-2,
+  .footer_section .col-lg-4 {
+    padding-left: 0 !important;
+  }
+  .footer_section .container {
+    padding: 0 3rem;
+  }
+  .footer_right {
+    padding-left: 0;
+  }
+  .copywrite {
+    padding: 3rem 0;
+    margin-top: 4rem;
+    flex-direction: column;
+  }
+  .Copyright_text,
+  .copywrite_links a {
+    font-size: 1.6rem;
+  }
+  .footer_links li a {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+  }
+  .copywrite_links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .footer_input,
+  .footer_input::placeholder {
+    font-size: 1.6rem;
+  }
+  .f_footer_text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+  .footer_form .form-group:first-child {
+    margin-bottom: 1.5rem;
+  }
+  .f_right_bottom .footer_text_md {
+    font-size: 2rem;
+  }
+  .footer_form {
+    padding-top: 3rem;
+  }
+  .footer_form .form-group:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+  .form_check .f_footer_text {
+    line-height: 2rem;
+    text-align: left;
+  }
+  .checkbox {
+    width: 5rem;
+    height: 5rem;
+  }
+  .social_logo a:nth-child(1) img {
+    width: 4rem;
+  }
+  .social_logo a:nth-child(2) img {
+    width: 4rem;
+  }
+  .social_logo a:nth-child(3) img {
+    width: 3rem;
+  }
+  .social_logo {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .form_groups {
+    display: block;
+  }
+  .footer_left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_link_box {
+    text-align: center;
+  }
+  .footer_right {
+    text-align: center;
+  }
+  .form_check {
+    justify-content: center;
+  }
+
+  /* ------------------------- Service Section 2 ---------------------- */
+  .service_section2 .service2_title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-top: 6rem;
+  }
+  .service_section2 .text_xl {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    margin-top: 2rem;
+  }
+  /* ------------------------ Proprietary_section ---------------------- */
+  .service_section2 .title_lg,
+  .Proprietary_section .title_lg {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .Proprietary_slide .text_xl {
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575px) {
+  html {
+    font-size: 1.87vw;
+  }
+}
